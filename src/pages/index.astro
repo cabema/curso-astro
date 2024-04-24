@@ -16,7 +16,7 @@ const hobbies = [
   "Comer",
 ];
 
-const isActive = false;
+const isActive = true;
 ---
 
 <ul>
@@ -31,11 +31,7 @@ const isActive = false;
 </ul>
 
 <h3 class="warning">
-  {
-	isActive 
-	? "Usuario Activo" 
-	: "Usuario Inactivo"
-}
+  {isActive && "Estoy activo"}
 </h3>
 
 <script>
