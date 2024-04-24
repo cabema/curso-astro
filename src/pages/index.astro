@@ -1,37 +1,59 @@
 ---
-const title = 'Proyecto Astro Mil!!!';
-const color = 'warning';
+const title = "Proyecto Astro Mil!!!";
+const color = "warning";
 
-const hobbies = ['Programar', 'Jugar', 'Bailar', 'Leer', 'Dormir'];
+const hobbies = [
+  "Programar",
+  "Jugar",
+  "Bailar",
+  "Leer",
+  "Dormir",
+  "Comer",
+  "Jugar",
+  "Bailar",
+  "Leer",
+  "Dormir",
+  "Comer",
+];
+
+const isActive = false;
 ---
 
 <ul>
-{hobbies.map((hobby) => <li>{hobby}</li>)}
+  {
+    hobbies.map((hobby) => (
+      <li>
+        <h3>{hobby}</h3>
+        <button>Like</button>
+      </li>
+    ))
+  }
 </ul>
 
-<p>.</p>
-<h1 class={color}>{hobbies[0]}</h1>
-<h1 class={color}>{hobbies[1]}</h1>
-<h1 class={color}>{hobbies[2]}</h1>
-<h1 class={color}>{hobbies[3]}</h1>
-<h1 class={color}>{hobbies[4]}</h1>
+<h3 class="warning">
+  {
+	isActive 
+	? "Usuario Activo" 
+	: "Usuario Inactivo"
+}
+</h3>
 
 <script>
-	console.log('Hola Mundo!');
+  console.log("Hola Mundo!");
 </script>
 
 <style>
-	body {
-		background-color: #202020;
-		color: white;
-	}
-	.title {
-		color: skyblue;
-	}
-	.danger {
-		color: red;
-	}
-	.warning {
-		color: yellow;
-	}
+  body {
+    background-color: #202020;
+    color: white;
+  }
+  .title {
+    color: skyblue;
+  }
+  .danger {
+    color: red;
+  }
+  .warning {
+    color: yellow;
+  }
 </style>
