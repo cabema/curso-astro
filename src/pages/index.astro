@@ -1,8 +1,20 @@
 ---
-const title = 'Proyecto Astro!!!';
+const title = 'Proyecto Astro Mil!!!';
+const color = 'warning';
+
+const hobbies = ['Programar', 'Jugar', 'Bailar', 'Leer', 'Dormir'];
 ---
 
-<h1 class="title">{title}</h1>
+<ul>
+{hobbies.map((hobby) => <li>{hobby}</li>)}
+</ul>
+
+<p>.</p>
+<h1 class={color}>{hobbies[0]}</h1>
+<h1 class={color}>{hobbies[1]}</h1>
+<h1 class={color}>{hobbies[2]}</h1>
+<h1 class={color}>{hobbies[3]}</h1>
+<h1 class={color}>{hobbies[4]}</h1>
 
 <script>
 	console.log('Hola Mundo!');
@@ -15,5 +27,11 @@ const title = 'Proyecto Astro!!!';
 	}
 	.title {
 		color: skyblue;
+	}
+	.danger {
+		color: red;
+	}
+	.warning {
+		color: yellow;
 	}
 </style>
