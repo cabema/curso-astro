@@ -1,14 +1,29 @@
+---
+interface Props {
+    pageTitle?: string
+    pageDescription?: string
+}
+const { pageTitle,pageDescription } = Astro.props
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI super Pagina</title>
+    <meta name="description" content={pageDescription}>
+    <title>Mi super Pagina | {pageTitle}</title>
 </head>
 <body>
     
     <slot />
-    
+
+     <style>
+        body {
+            background: #202020;
+            color: white;
+        }
+     </style>
 
 </body>
 </html>

@@ -1,56 +1,8 @@
 ---
-const title = "Proyecto Astro Mil!!!";
-const color = "warning";
-
-const hobbies = [
-  "Programar",
-  "Jugar",
-  "Bailar",
-  "Leer",
-  "Dormir",
-  "Comer",
-  "Jugar",
-  "Bailar",
-  "Leer",
-  "Dormir",
-  "Comer",
-];
-
-const isActive = false;
+import Layout from "../components/layout.astro";
 ---
 
-<ul>
-  {
-    hobbies.map((hobby) => (
-      <li>
-        <h3>{hobby}</h3>
-        <button>Like</button>
-      </li>
-    ))
-  }
-</ul>
-
-<h3 class="warning">
-  {isActive && "Estoy activo"}
-  {!isActive && "No esta activo"}
-</h3>
-
-<script>
-  console.log("Hola Mundo!");
-</script>
-
-<style>
-  body {
-    background-color: #202020;
-    color: white;
-  }
-  .title {
-    color: skyblue;
-  }
-  .danger {
-    color: red;
-  }
-  .warning {
-    color: yellow;
-  }
-</style>
+<Layout pageTitle="Inicio" pageDescription="Bienvenido a mi sitio web aprendiendo Astro">
+  <h1>Pagina inicial</h1>
+  <p>Bienvenido a mi sitio web</p>
+</Layout>
