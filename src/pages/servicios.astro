@@ -2,17 +2,33 @@
 import Card from "../components/card.astro";
 ---
 
-<h1>Acerca de mi Web</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis pariatur sequi vero velit facere exercitationem eum soluta error minima, animi maiores quae doloribus quam consequuntur saepe dolor dicta deserunt.</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Servicios</title>
+  </head>
+  <body>
+    <h1>Acerca de mi Web</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis
+      pariatur sequi vero velit facere exercitationem eum soluta error minima,
+      animi maiores quae doloribus quam consequuntur saepe dolor dicta deserunt.
+    </p>
 
-<Card />
-<Card />
-<Card />
-<Card />
+    <Card title="Servicio 1" content="Contenido uno" />
+    <Card title="Servicio 2" content="Contenido dos" />
+    <Card title="Servicio 3 Ñ ñ" content="Contenido tres" />
+    <Card title="Servicio 4" content="Contenido cuatro" />
+    <Card />
+    <Card />
 
-<style>
-    body {
+    <style>
+      body {
         background: #202020;
         color: white;
-    }
-</style>
+      }
+    </style>
+  </body>
+</html>

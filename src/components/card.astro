@@ -1,6 +1,16 @@
+---
+interface Props {
+    title?: string
+    content?: string
+}
+
+const { title = 'Sin título', content = 'Sin contenido' } = Astro.props
+
+---
+
 <div class="card">
-    <h1>Mi tarjeta</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, sint.</p>
+    <h1>{ title }</h1>
+    <p>{content}</p>
 </div>
 
 <style>
