@@ -1,8 +1,9 @@
 ---
 import Layout from "../../components/layout.astro";
+import bgImage from '../../images/vader.jpg';
 
 const posts = await Astro.glob("./posts/*.md");
-console.log(posts.map((post) => post.url));
+//console.log(posts.map((post) => post.url));
 ---
 
 <Layout
@@ -10,6 +11,9 @@ console.log(posts.map((post) => post.url));
   pageDescription="tutorial para desarrollo y programacion astro"
 >
   <h1>Blog</h1>
+ 
+
+  <img width="100" src={bgImage.src} alt="vader">
 
   {
     posts.map((post) => {
